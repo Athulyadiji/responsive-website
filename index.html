@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Foods</title>
+    <link rel="icon" type="image/x-icon" href="img-foods yes/icon.jpeg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbg">
+        <div class="container-fluid" id="navbg">
+          <a class="navbar-brand  fw-bold" href="#" id="logomain">Tasty Foods</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navitem" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#order">Orders</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Deals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link " href="#footer">Location</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" id="buttonmain" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <!--carosaul-->
+      <div id="carouselExampleCaptions" class="carousel slide" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active" style="width: 100%;height:min-content;object-fit:cover;">
+            <img src="img-foods yes/carosual-1.webp" class="slide d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-white" id="sliderpara">Variety Non-veg items</h2>
+              <p class="text-white">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="width: 100%;height:min-content;object-fit:cover;">
+            <img src="img-foods yes/carosual-2.jpeg" class="slide d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-white" id="sliderpara">Veg options</h2>
+              <p class="text-white">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="width: 100%;height:min-content;object-fit:cover;">
+            <img src="img-foods yes/carosual-3.jpeg" class="slide d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-white" id="sliderpara">Special Burger</h2>
+              <p class="text-white">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <!--order section-->
+      
+      <div class="container-fluid" id="orderbg">
+        <div class="container">
+        <h1 class="text-center" id="orderpara">ORDER YOUR FAVOURITE FOOD!</h1>
+        <div class="row" id="order">
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/biriyani.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Biriyani</h5>
+                <p class="card-text">Tasty chicken biriyani </p>
+                <h5 class="card-title text-danger">Rs.199.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3" >
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/dosa.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dosa</h5>
+                <p class="card-text">Tasty Dosa with coconut chutney </p>
+                <h5 class="card-title text-danger">Rs.100.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/fish.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fish</h5>
+                <p class="card-text">Tasty seasonal fishes</p>
+                <h5 class="card-title text-danger">Rs.250.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/icecreams.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Icecream</h5>
+                <p class="card-text">Tasty Icecreams </p>
+                <h5 class="card-title text-danger">Rs.150.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/prawns.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">prawns</h5>
+                <p class="card-text">Tasty Prawn fry</p>
+                <h5 class="card-title text-danger">Rs.275.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card text-left" style="width: 100%;height:auto;">
+              <img src="img-foods yes/shakes.jpeg" class="card-img-top" style="width: 100%;height:300px;object-fit:cover;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">shakes</h5>
+                <p class="card-text">Tasty-variety shakes </p>
+                <h5 class="card-title text-danger">Rs.125.00</h5>
+                <a href="#" class="btn btn-primary" id="buttonmain">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      <!--footer-->
+      <div class="container-fluid" id="footerbg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+              <h1 class="text-white" id="footerlogo">Tasty Foods</h1>
+              <p class="text-white" id="footerpara">Tasty Foods: a restaurant that serves delicious and satisfying meals to satisfy any craving. Come experience our flavorful dishes in a cozy and inviting atmosphere.</p>
+              <p class="text-white">Tel: 9656215673
+                <br>Location: Kannur, Kerala
+                <br>Website: www.tasty.com
+                <br>E-mail:tastyfoods@gmail.com
+              </p>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.8266272925684!2d75.54360447437656!3d11.91715098830962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba431cbdca3b107%3A0xa772b7fee38f1b7b!2sKannur%20International%20Airport%20(%20CNN%20)!5e0!3m2!1sen!2sin!4v1683098919110!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z"/>
+          <path d="M12 2L2 12h3v8h14v-8h3L12 2zm0 3.6l5.6 5.6h-3.2v6.8h-4v-6.8H6.4L12 5.6z"/>
+        </svg>
+      </button>
+      
+    <script>
+      // Get the button:
+var myButton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    
+</body>
+</html>
